@@ -1,4 +1,5 @@
 /* soft reset do css*/
+
 * {
  margin: 0;
  padding: 0;
@@ -50,6 +51,7 @@ flex-wrap: wrap;
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
   }
   
   .menu ul {
@@ -64,7 +66,14 @@ flex-wrap: wrap;
   .menu a{
     display: block;
     padding: 10px 20px;
+    transition: background-color 1s, color 1s;
   }
+
+.menu a:hover {
+background-color: teal;
+color: white;
+
+}
 
    a {
     text-decoration: none;
@@ -75,6 +84,23 @@ flex-wrap: wrap;
     text-decoration: underline;    
   }
   
+  .titulo {
+    transform: scale(0.2) translateY(50vh); 
+    opacity: 0;
+    animation: linear 2s animacaoTitulo forwards;
+  }
+
+  @keyframes animacaoTitulo{
+    0%{
+      transform: scale(0.2) translateY(50vh); 
+      opacity: 0;
+      }
+    100%{
+      transform: scale(1) translateY(0); 
+      opacity: 1;
+    }
+  }
+
   .site-subtitle,
   .site-title {
     color: SlateGray;
@@ -93,13 +119,16 @@ flex-wrap: wrap;
   font-family: 'Expletus Sans', cursive;
 }
 
+.contato,
 .portfolio{
   /*font-size: 1em;
   margin-bottom: 1.5em;*/
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
+  text-align: center;
 }
 
+.contato,
 .portfolio h2{
   font-family: 'Neucha', cursive;
 }
@@ -118,10 +147,10 @@ flex-wrap: wrap;
 
 @media (min-width: 880px){
   .portfolio .grid{
-    grid-template-columns: repeat(3, 260px);
+    grid-template-columns: repeat(4, 260px);
     align-content: center;
     justify-content: center;
-    /* height: calc(100vh - 48px - 8em); */
+    height: calc(100vh - 48px - 8em);
   }
 }
 
@@ -130,11 +159,20 @@ flex-wrap: wrap;
 }
 
 .img-portfolio {
-  height: 180px;
+  height: 135px;
   width: 240px;
   object-fit: cover;
+  object-position: left bottom;
   border-radius: 5%;
+  transition: transform 500ms;
 }
+
+.img-portfolio:hover {
+  transform: scale(1.2) rotate(2deg)
+
+
+}
+
 
 /*@media (min-width: 1200px){
   .img-portfolio {
@@ -144,3 +182,21 @@ flex-wrap: wrap;
 
 }
 */
+
+.contato .icons{
+text-align: center;
+
+}
+
+
+.contato a{
+  color: teal;
+  font-size: 3em;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+text-decoration: none;
+text-shadow: 0px 0px 15px aquamarine;
+}
