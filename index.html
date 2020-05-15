@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wdevice-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcio Soares</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;1,700&family=Neucha&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ce7bba51a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
           <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#"><i class="fas fa-house-user"></i></a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
-        <div>
+        <div class="titulo">
             <h1 class="site-title">Marcio Soares</h1>
             <h2 class="site-subtitle">Design Gráfico</h2>
             <h2 class="site-subtitle">a procura de um caminho</h2>
 
         </div>
     </header> 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2>Projetos</h2>
       <div class="grid">
         <figure>
@@ -73,5 +75,32 @@
       </div>
 
     </section>
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre</h2>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Contato</h2>
+      <div class="grid icons">
+        <a target="_blank" href="https://kakosapo2020.github.io/imersaocss/">
+          <i class="fab fa-github-square"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/marciosssoares">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/marcio-soares-baab504/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:mcontato@magano.net">
+          <i class="fas fa-envelope-square"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/marcio3s/">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+
+      </div>
+    </section>
+
 </body>
 </html>
