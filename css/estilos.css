@@ -16,15 +16,18 @@ body {
   }
   
   /* se a tela tiver pelelo menos 600px vai carregar esses estilos */
-
   @media (min-width: 400px) {
     body {
       font-size: 18px;
     }
   }
 
+
+    /* breakpoint */
   @media (min-width: 600px) {
     body {
+      background-attachment: fixed;
+      background-size: cover;
       font-size: 18px;
     }
   }
@@ -41,7 +44,7 @@ header{
 height: 100vh;
 display: flex;
 justify-content: center;
-align-items : center;
+align-items : center; 
 flex-wrap: wrap;
 
 }
@@ -115,42 +118,78 @@ color: white;
   }
 
 .site-title{
-  /*font-size: 30px;*/
+  font-size: 4em;
   font-family: 'Expletus Sans', cursive;
 }
 
+.sobre,
 .contato,
 .portfolio{
   /*font-size: 1em;
   margin-bottom: 1.5em;*/
+  margin-top: 1.5em;
   padding: 2em;
   min-height: 100vh;
-  text-align: center;
+  /* text-align: center; */ 
 }
 
-.contato,
-.portfolio h2{
-  font-family: 'Neucha', cursive;
+@media (min-width: 1200px){
+.container {
+margin-left: auto;
+margin-right: auto;
+max-width: 1200px;
 }
+
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+  font-family: 'Neucha', cursive;
+  color: teal;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.sobre p {
+/* color: white; */
+text-indent: 1.4em;
+margin-bottom: 1.4em;
+text-align: justify;
+}
+
+.sobre .avatar {
+margin-left: 2em;
+clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
+}
+
+
+@media (min-width: 600px) {
+.sobre .avatar {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  float: right; 
+}
+}
+
 
 .portfolio .grid{
   display: grid;
   gap: 1.5em;
-  grid-template-columns: 240px;
 }
 
+
 @media (min-width: 560px){
-  .portfolio .grid{
+  .portfolio .grid {
     grid-template-columns: 240px 240px;
   }
 }
 
+
 @media (min-width: 880px){
-  .portfolio .grid{
+  .portfolio .grid {
     grid-template-columns: repeat(4, 260px);
-    align-content: center;
-    justify-content: center;
-    height: calc(100vh - 48px - 8em);
+    /* align-content: center;
+    justify-content: center; */
+    height: calc(100vh - 8em - 48px);
   }
 }
 
@@ -158,21 +197,60 @@ color: white;
   text-align: center;
 }
 
+.portfolio h3{
+  font-size: 1em;
+}
+
+
 .img-portfolio {
   height: 135px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
   object-position: left bottom;
   border-radius: 5%;
   transition: transform 500ms;
-}
+} 
 
-.img-portfolio:hover {
+
+
+/* .img-portfolio:hover {
   transform: scale(1.2) rotate(2deg)
+} */
 
-
+.flip-card {
+  height: 135px;
+  perspective: 600px;
 }
 
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 135px;
+  width: 100%;
+  transform: rotateY(180deg);
+}
 
 /*@media (min-width: 1200px){
   .img-portfolio {
