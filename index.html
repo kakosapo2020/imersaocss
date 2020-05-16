@@ -6,13 +6,14 @@
     <title>Marcio Soares</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;1,700&family=Neucha&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8ce7bba51a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8ce7bba51a.js" crossorigin="anonymous">
+    </script>
 </head>
 <body>
     <header>
         <nav class="menu">
-          <ul>
-            <li><a href="#"><i class="fas fa-house-user"></i></a></li>
+          <ul class="container">
+             <li><a href="#"><i class="fas fa-house-user"></i></a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#portfolio">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
@@ -21,66 +22,186 @@
         <div class="titulo">
             <h1 class="site-title">Marcio Soares</h1>
             <h2 class="site-subtitle">Design Gráfico</h2>
-            <h2 class="site-subtitle">a procura de um caminho</h2>
+            <h2 class="site-subtitle">. . . a procura de um caminho</h2>
 
         </div>
     </header> 
-    <section class="portfolio" id="portfolio">
+ 
+    <section class="sobre container" id="sobre">
+      <h2>Sobre</h2>
+      <figure class="avatar">
+        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQH0aIJcM1ct0w/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=7Nzh-U5EfZPB4UhV4ewcwZPy3luM5bkgTjlcBJkfwMU" alt="Marcio Soares">
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel, recusandae quasi fuga reprehenderit veniam, modi odit exercitationem deserunt laborum possimus quas dicta ea reiciendis quaerat. Inventore laudantium ex id.
+      </p>
+
+      <p>
+        Beatae perferendis nihil consectetur nobis aliquid molestiae fugit quidem, neque dolores quia, laboriosam eos, veniam aut doloremque culpa magni voluptates alias officia aliquam dolor modi illo possimus omnis? Ab, iure.
+      </p>
+
+      <p>
+        Quia dolore, accusantium ipsam beatae excepturi quod voluptatem. Ad illo tenetur reiciendis nisi labore qui modi voluptatibus ab enim! Veniam odio repellat est, omnis eius sapiente sint velit natus odit.
+      </p>
+
+      <p>
+        Este site foi contruído durante a <a href="https://www.alura.com.br/imersao-css" target="_blank"> Imersão CSS da Alura </a>👍🏼
+      </p>
+
+    </section>
+
+    <section class="portfolio container" id="portfolio">
       <h2>Projetos</h2>
       <div class="grid">
-        <figure>
-          <img class="img-portfolio" src="./img/KV_mascot_01.jpg" alt="Projeto 01">
-          <figcaption>Projeto 01</figcaption>
-        </figure>
-        <figure>
+
+        
+        <div class="flip-card">
+          <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/KV_mascot_01.jpg" alt="Circles">
+            <figcaption>Circles</figcaption>
+          </figure>
+          <div class="card-back">
+            <h3>Movimento contínuo</h3>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="flip-card">
+          <div class="card">
+          <figure class="card-front">
           <img class="img-portfolio" src="./img/KV_mascot_02.jpg" alt=">Projeto 02">
           <figcaption>Projeto 02</figcaption>
         </figure>
-        <figure>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
           <img class="img-portfolio" src="./img/KV_mascot_03.jpg" alt="Projeto 03">
           <figcaption>Projeto 03</figcaption>
         </figure>
-        <figure>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+        </div>
+
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
           <img class="img-portfolio" src="./img/KV_mascot_04.jpg" alt="Projeto 04">
           <figcaption>Projeto 04</figcaption>
         </figure>
-        <figure>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+        </div>
+
+        
+    <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
           <img class="img-portfolio" src="./img/KV_mascot_05.jpg" alt="Projeto 05">
           <figcaption>Projeto 05</figcaption>
         </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/KV_mascot_06.jpg" alt="Projeto 06">
-          <figcaption>Projeto 06</figcaption>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+          <img class="img-portfolio" src="./img/KV_mascot_06.jpg" alt="Show">
+          <figcaption>Show</figcaption>
         </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/KV_mascot_07.jpg" alt="Projeto 07">
-          <figcaption>Projeto 07</figcaption>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+          <img class="img-portfolio" src="./img/KV_mascot_07.jpg" alt="High Tech">
+          <figcaption>High Tech</figcaption>
         </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/KV_mascot_08.jpg" alt="Projeto 08">
-          <figcaption>Projeto 08</figcaption>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+          <img class="img-portfolio" src="./img/KV_mascot_08.jpg" alt="Passado e Futuro">
+          <figcaption>Passado e Futuro</figcaption>
         </figure>
-        <figure> 
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flip-card">
+      <div class="card">
+          <figure class="card-front">
           <img class="img-portfolio" src="./img/KV_mascot_09.jpg" alt="Projeto 09">
           <figcaption>Projeto 09</figcaption>
         </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/KV_mascot_10.jpg" alt="Projeto 10">
-          <figcaption>Projeto 10</figcaption>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="flip-card">
+      <div class="card">
+          <figure class="card-front">
+          <img class="img-portfolio" src="./img/KV_mascot_10.jpg" alt="Pixels">
+          <figcaption>Pixels</figcaption>
         </figure>
-        <figure>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
           <img class="img-portfolio" src="./img/KV_mascot_11.jpg" alt="Projeto 11">
           <figcaption>Projeto 11</figcaption>
         </figure>
+        <div class="card-back">
+          <h3>Movimento contínuo</h3>
+        </div>
       </div>
+    </div>
+
+
+    </div>
 
     </section>
-
-    <section class="sobre" id="sobre">
-      <h2>Sobre</h2>
-    </section>
-
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
       <h2>Contato</h2>
       <div class="grid icons">
         <a target="_blank" href="https://kakosapo2020.github.io/imersaocss/">
